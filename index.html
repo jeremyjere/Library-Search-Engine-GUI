@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav>
+    <a href='./index.html'>Search</a>
+    <a href='./table.html'>Table</a>
+    <a href='./mrca.html'>MRCA</a>
+  </nav>
+
+
+  <div id="container">
+    <h1 id="titleFont">
+      Mike's Library
+    </h1>
+  </div>
+  
+  <div id="container">
+    <input type="text" id="inputBox" placeholder="Search..."></input>
+    <input type="number" min="0" max="100000"id="pageNumIndex" placeholder="Page #"></input>
+    
+    <select id="typeBox">
+      <option value="First Name"">First Name</option>
+      <option value="Last Name">Last Name</option>
+      <option value="Gender">Gender</option>
+      <option value="Unique Author ID">Unique Author ID</option>
+      <option value="Book Title">Book Title</option>
+      <option value="References">References</option>
+    </select>
+    <div id="space"></div>
+    <button onclick="searchButton()" class="button">Search</button>
+  </div>
+    <div id="space"></div>
+    <h5 class="container" id="textFont">Your Action Took:</h5>
+    <div id="timeFont">
+      <h5 id="time"></h5>
+    </div>
+
+
+  
+  <div id="upOrDown">
+    <h1 value="Ascending"></h1>
+    <!--       inTableMaker(),the if statement needs the value of upOrDown, which is on this index.html and table.html. Since it does not matter for index.html since there is no descending option, we just need this id to exist to run or else it would not get an id value. -->
+  </div>
+
+  <table>
+    <tr style="color:#e2e2e2">
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Gender</th>
+      <th>UID</th>
+      <th>Title</th>
+      <th>References</th>
+    </tr>
+
+    <tbody id="indexTable" style="color:#e2e2e2"></tbody>
+  </table>
+
+  <script src="./DO_NOT_TOUCH/dataLoader.js"></script>
+  <script src="makeParallel.js"></script>
+  <script src="slice.js"></script>
+  <script src="hashFunction.js"></script>
+  <script src="mergeSort.js"></script>
+  <script src="references.js"></script>
+  <script src="binarySearch.js"></script>
+  <script src="tableMaker.js"></script>
+  <script src="searchButton.js"></script>
+  <script src="sortType.js"></script>
+  <script src="trueQueue.js"></script>
+</body>
+
+</html>
+

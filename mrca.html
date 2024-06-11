@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <nav>
+      <a href='./index.html'>Search</a>
+      <a href='./table.html'>Table</a>
+      <a href='./mrca.html'>MRCA</a>
+  </nav>
+  <div id="container">
+    <h1 id="titleFont">Most Recent Common Ancestor</h1>
+  </div>
+  
+  <div id="container">
+    <input type="text" id="UID1" placeholder="Starting UID"></input>  
+    <input type="text" id="UID2" placeholder="Target UID"></input>
+  </div>
+
+  <div id="space"></div>
+
+  <div id="container">
+    <button onclick="mrca()" class="button">Find</button>
+  </div>
+  
+  <div id="container">
+    <h3 id="displayMRCA" style="color:#e2e2e2"></h3>
+  </div>
+
+
+  <script src="./DO_NOT_TOUCH/dataLoader.js"></script>
+  <script src="makeParallel.js"></script>
+  <script src="hashFunction.js"></script>
+  <script src="trueQueue.js"></script>
+  <script src="bfs.js"></script>
+  <script src="bfsOptimizer.js"></script>
+</body>
+
+</html>
